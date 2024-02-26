@@ -1,0 +1,47 @@
+void setup() {
+  // put your setup code here, to run once:
+  {pinMode(1, OUTPUT);} //merah
+  {pinMode(2, OUTPUT);} //kuning
+  {pinMode(3, OUTPUT);} //hijau
+
+  {pinMode(10, OUTPUT);} //merah
+  {pinMode(9, OUTPUT);} //kuning
+  {pinMode(8, OUTPUT);} //hijau
+
+}
+
+void loop() {
+
+//merah dan hijau menyala
+ digitalWrite(1, HIGH);
+ digitalWrite(8, HIGH);
+ delay(3000);
+ digitalWrite(1, LOW);
+ digitalWrite(8, LOW);
+ //end1
+
+//start kuning
+ digitalWrite(2, HIGH);
+ digitalWrite(9, HIGH);
+ delay(1000);
+ digitalWrite(2, LOW);
+ digitalWrite(9, LOW);
+ //end kuning
+
+//swipe merah dan hijau
+ digitalWrite(10, HIGH);
+ digitalWrite(3, HIGH);
+ delay(3000);
+ digitalWrite(10, LOW);
+ digitalWrite(3, LOW);
+ //end2
+
+//start kuning
+  digitalWrite(2, HIGH);
+ digitalWrite(9, HIGH);
+ delay(1000);
+ digitalWrite(2, LOW);
+ digitalWrite(9, LOW);
+ //end kuning
+
+}
